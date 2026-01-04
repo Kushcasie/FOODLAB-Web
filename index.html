@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <img src="Images/FullLogo_Transparent_NoBuffer.png" alt="Logo" class="logo">
+        <p>Good food for every budget</p>
+
+        <nav>
+            <a href="#budget">Budget</a>
+            <a href="#medium">Medium</a>
+            <a href="#premium">Premium</a>
+        </nav>
+    </header>
+
+    
+     <section id="About FOOD LAB" class="section">
+        <h2 class="about-title">About Food Lab</h2>
+
+
+        <div class="about">
+            <div class="about-text">
+                <p>Food Lab was a creation born of curiosity. "What are we having for supper?", such simple words that can cause one to relentlesly overthink.
+Thus Food Lab was created, here, we curate our recipes to fit your budget and taste. Combining recipes from your favourite content creators and food bloggers.
+Saving you money, time and the hassle of overthinking.</p>
+            </div>
+            <div class="about-image">
+                <img src="Images/about.jpg" alt="food">
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- BUDGET SECTION -->
+<section id="premium" class="section">
+    <h2>Budget Friendly</h2>
+
+    <div class="carousel">
+        <button class="arrow left">‹</button>
+
+        <div class="recipes">
+            <div class="recipe-card">
+                <img src="images/Ugali_&_Sukuma_Wiki.webp" alt="Ugali and Sukuma">
+                <h3>Ugali & Sukuma Wiki</h3>
+                <p>A classic affordable Kenyan meal.</p>
+                <a href="ugali-sukumawiki.html" class="recipe-btn">View Recipe</a>
+            </div>
+            
+            <div class="recipe-card">
+                <img src="images/Githeri-1-scaled.jpg" alt="Githeri">
+                <h3>Githeri</h3>
+                <p>Simplicity never tasted better.</p>
+                <a href="#" class="recipe-btn">View Recipe</a>
+            </div>
+
+            <div class="recipe-card">
+                <img src="images/Rice-Beans.jpg" alt="Rice and Beans">
+                <h3>Rice and Beans</h3>
+                <p>A classic affordable Kenyan meal.</p>
+                <a href="#" class="recipe-btn">View Recipe</a>
+            </div>
+
+            <div class="recipe-card">
+                <img src="images/Ugali_&_Sukuma_Wiki.webp" alt="Ugali and Sukuma">
+                <h3>Ugali & Sukuma Wiki</h3>
+                <p>A classic affordable Kenyan meal.</p>
+                <a href="ugali-sukumawiki.html" class="recipe-btn">View Recipe</a>
+            </div>
+
+            <div class="recipe-card">
+                <img src="images/Rice-Beans.jpg" alt="Rice and Beans">
+                <h3>Rice and Beans</h3>
+                <p>A classic affordable Kenyan meal.</p>
+                <a href="#" class="recipe-btn">View Recipe</a>
+            </div>
+        </div>
+
+        <button class="arrow right">›</button>
+    </div>
+</section>
+
+
+    <!-- MEDIUM SECTION -->
+<section id="premium" class="section">
+    <h2>Medium Budget</h2>
+
+    <div class="carousel">
+        <button class="arrow left">‹</button>
+
+        <div class="recipes">
+          <div class="recipe-card">
+             <img src="Images/Chickenstew.webp" alt="Chickenstew">
+             <h3>Chicken Stew</h3>
+             <p>Perfect when you can spend a little extra.</p>
+             <button><a href="#" class="recipe-btn">View Recipe</a></button>
+          </div>
+        
+          <div class="recipe-card">
+             <img src="images/Ugali and Fish Stew.jpg" alt="Ugali & Fish Stew">
+             <h3>Ugali & Fish Stew</h3>
+             <p>A classic affordable Kenyan meal.</p>
+             <button><a href="#" class="recipe-btn">View Recipe</a></button>
+          </div>
+
+          <div class="recipe-card">
+             <img src="images/Pilau Rice.webp" alt="Pilau Rice">
+             <h3>Pilau Rice</h3>
+             <p>A taste from the Coast.</p>
+             <button><a href="#" class="recipe-btn">View Recipe</a></button>
+          </div>
+        </div>
+
+        <button class="arrow right">›</button>
+    </div>
+
+</section>
+
+    <!-- PREMIUM SECTION -->
+<section id="premium" class="section">
+    <h2>Premium Meals</h2>
+
+    <div class="carousel">
+        <button class="arrow left">‹</button>
+        <div class="recipes">
+          <div class="recipe-card">
+             <img src="Images/nyamachoma.webp" alt="Grilled Steak">
+             <h3>Grilled Steak</h3>
+             <p>For special days and fine dining.</p>
+             <button><a href="#" class="recipe-btn">View Recipe</a></button>
+          </div>
+        
+         <div class="recipe-card">
+             <img src="Images/Hamburger.jpg" alt="Hamburger">
+             <h3>Hamburger</h3>
+             <p>Tired of the normal?</p>
+             <button><a href="#" class="recipe-btn">View Recipe</a></button>
+         </div>
+
+         <div class="recipe-card">
+             <img src="Images/Chicken-Coconut-Curry.webp" alt="Chicken Coconut Curry">
+             <h3>Chicken Coconut Curry</h3>
+             <p>I am adventurous.</p>
+             <button><a href="#" class="recipe-btn">View Recipe</a></button>
+         </div>
+        </div>
+        <button class="arrow right">›</button>
+    </div>
+
+
+</section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>JoshKreates © 2025 Food Lab</p>
+    </footer>
+ <script>
+    document.querySelectorAll('.carousel').forEach(carousel => {
+    const recipes = carousel.querySelector('.recipes');
+    const leftBtn = carousel.querySelector('.arrow.left');
+    const rightBtn = carousel.querySelector('.arrow.right');
+
+    if (!recipes || !leftBtn || !rightBtn) return;
+
+    const scrollAmount = 320;
+
+    leftBtn.addEventListener('click', () => {
+        recipes.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+
+    rightBtn.addEventListener('click', () => {
+        recipes.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+
+    function updateButtons() {
+        leftBtn.disabled = recipes.scrollLeft <= 0;
+        rightBtn.disabled =
+            recipes.scrollLeft + recipes.clientWidth >= recipes.scrollWidth - 1;
+    }
+
+    window.addEventListener('load', updateButtons);
+    recipes.addEventListener('scroll', updateButtons);
+ });
+
+ </script>
+
+</body>
+</html>

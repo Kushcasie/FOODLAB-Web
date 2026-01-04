@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ugali & Sukuma Wiki</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="overlay">
+    <a href="../index.html" class="back-link">← Back to Recipes</a>
+
+    <div class="recipe-page">
+        <h1>Ugali & Sukuma Wiki</h1>
+
+        <div class="recipe-meta">
+          <span>⏱ 30 mins</span>
+          <span>🍽 Serves 1–2</span>
+          <span>💰 Ksh 50 - 100 Budget Friendly</span>
+       </div>
+
+        <img src="Images/Ugali_&_Sukuma_Wiki.webp" loading="lazy" alt="Kenyan style Ugali and Sukuma Wiki">
+
+        <div class="recipe-actions">
+          <button onclick="window.print()">🖨 Print Recipe</button>
+          <button onclick="shareRecipe()">🔗 Share</button>
+        </div>
+
+        <h2>Ingredients</h2>
+        <ul>
+            <li>2 cups maize flour</li>
+            <li>Water</li>
+            <li>1 bunch sukuma wiki</li>
+            <li>Onion</li>
+            <li>Oil & salt</li>
+        </ul>
+
+        <h2>Instructions</h2>
+        <ol>
+            <li>Boil water and gradually add maize flour.</li>
+            <li>Stir until firm to form ugali.</li>
+            <li>Fry onions, add sukuma, salt and cook.</li>
+            <li>Serve hot.</li>
+        </ol>
+    </div>
+    
+
+</div>
+
+<script>
+function shareRecipe() {
+    if (navigator.share) {
+        navigator.share({
+            title: document.title,
+            url: window.location.href
+        });
+    } else {
+        navigator.clipboard.writeText(window.location.href);
+        alert("Link copied to clipboard!");
+    }
+}
+</script>
+
+
+</body>
+</html>

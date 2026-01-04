@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RECIPE_TITLE</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="overlay">
+    <a href="../index.html" class="back-link">← Back to Recipes</a>
+
+    <div class="recipe-page">
+        <h1>RECIPE_TITLE</h1>
+
+        <img src="../images/RECIPE_IMAGE.webp" alt="RECIPE_ALT" loading="lazy">
+
+        <div class="recipe-actions">
+            <button onclick="window.print()">🖨 Print Recipe</button>
+            <button onclick="shareRecipe()">🔗 Share</button>
+        </div>
+
+        <p class="category">Category: RECIPE_CATEGORY</p>
+
+        <h2>Ingredients</h2>
+        <ul>
+            <!-- INGREDIENTS HERE -->
+        </ul>
+
+        <h2>Instructions</h2>
+        <ol>
+            <!-- STEPS HERE -->
+        </ol>
+    </div>
+</div>
+
+<script>
+function shareRecipe() {
+    if (navigator.share) {
+        navigator.share({
+            title: document.title,
+            url: window.location.href
+        });
+    } else {
+        navigator.clipboard.writeText(window.location.href);
+        alert("Link copied to clipboard!");
+    }
+}
+</script>
+
+</body>
+</html>
