@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ugali and Fish Stew</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="overlay">
+    <a href="../index.html" class="back-link">← Back to Recipes</a>
+
+    <div class="recipe-page">
+        <h1>UGALI & FISH STEW</h1>
+
+        <div class="recipe-meta">
+          <span>⏱ 50 mins</span>
+          <span>🍽 Serves 2</span>
+          <span>💰 Ksh 250 - 500 Medium Budget</span>
+       </div>
+
+        <img src="Images/Ugali and Fish Stew.jpg" alt="Kenyan Fish Stew" loading="lazy">
+
+        <div class="recipe-actions">
+            <button onclick="window.print()">🖨 Print Recipe</button>
+            <button onclick="shareRecipe()">🔗 Share</button>
+        </div>
+
+        <p class="category">Category: RECIPE_CATEGORY</p>
+
+        <h2>Ingredients</h2>
+        <ul>
+            <li>Tilapia fish, cut into steaks and cleaned</li>
+            <li>Onions 2 medium, grated or finely chopped</li>
+            <li>Garlic 2 cloves, grated or minced</li>
+            <li>Ginger 1 tsp, grated</li>
+            <li>Tomatoes 2 large, blended or finely chopped</li>
+            <li>Vegetable oil 50 ml (3.4 tbsp)</li>
+            <li>Tomato paste 1 tsp</li>
+            <li>Curry powder 1.5 tsp</li>
+            <li>Coconut cream 15 ml (1 tbsp, optional)</li>
+            <li>Fresh coriander chopped for garnish</li>
+            <li>Bell peppers 1 mixed (yellow, red, or green), sliced</li>
+            <li>Salt To taste</li>
+            <li>Maize flour (cornmeal) 4 cups (480 g)</li>
+            <li>Water 8 cups (1.9 L) for ugali</li>
+        </ul>
+
+        <h2>Instructions</h2>
+        <ol>
+            <li>Start by preparing the ugali. In a large pot, bring 8 cups of water to a boil.</li>
+            <li>Gradually add the maize flour to the boiling water, stirring continuously to avoid lumps.</li>
+            <li>Reduce the heat to low and continue stirring until the mixture thickens and pulls   away from the sides of the pot. This should take about 10-15 minutes. Once done, remove from heat and set aside, keeping it warm.</li>
+            <li>Next, prepare the fish stew. Heat the vegetable oil in a large pan  over medium heat.</li>
+            <li>Add the grated onions, garlic, and ginger to the pan. Sauté until the onions are translucent and fragrant, about 5 minutes.</li>
+            <li>Add the blended or chopped tomatoes to the pan. Cook for about 10 minutes, stirring occasionally, until the tomatoes break down and form a thick sauce.</li>
+            <li>Stir in the tomato paste and curry powder, cooking for another 2    -3 minutes to allow the spices to release their flavors.</li>
+            <li>Add the fish steaks to the pan, ensuring they are coated with the sauce.</li>
+            <li>If using, pour in the coconut cream to add richness to the stew. Add salt to taste.</li>
+            <li>Cover the pan and let the fish simmer in the sauce for about 15-20 minutes, or until the fish is cooked through and flakes easily with a fork.</li>
+            <li>In the last 5 minutes of cooking, add the sliced bell peppers to the stew for added color and crunch.</li>
+            <li>Once the fish is cooked, garnish the stew with freshly chopped coriander.</li>
+            <li>To serve, scoop portions of the ugali onto plates and ladle the fish stew over it. Enjoy your Ugali and Fish Stew!</li> 
+        </ol>
+    </div>
+</div>
+
+<script>
+function shareRecipe() {
+    if (navigator.share) {
+        navigator.share({
+            title: document.title,
+            url: window.location.href
+        });
+    } else {
+        navigator.clipboard.writeText(window.location.href);
+        alert("Link copied to clipboard!");
+    }
+}
+</script>
+
+</body>
+</html>
