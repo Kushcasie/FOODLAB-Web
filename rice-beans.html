@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RICE AND BEANS</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="overlay">
+    <a href="../index.html" class="back-link">← Back to Recipes</a>
+
+    <div class="recipe-page">
+        <h1>RICE AND BEANS</h1>
+
+        <div class="recipe-meta">
+          <span>⏱ 40 mins</span>
+          <span>🍽 Serves 2</span>
+          <span>💰 Ksh 100 - 150 Budget Friendly</span>
+       </div>
+
+        <img src="Images/Rice-Beans.jpg" alt="Rice and beans" loading="lazy">
+
+        <div class="recipe-actions">
+            <button onclick="window.print()">🖨 Print Recipe</button>
+            <button onclick="shareRecipe()">🔗 Share</button>
+        </div>
+
+        <h2>Ingredients</h2>
+        <ul>
+            <li>2 tablespoons cooking oil</li>
+            <li>1 cup of Rice</li>
+            <li>2 cups Water</li>
+            <li>1 or 2 Garlic Clove diced (depending on preference)</li>
+            <li>1/2 tsp Tomato paste</li>
+            <li>1 Royco Chicken/Beef Bouillon Cube</li>
+            <li>1 Small red bell pepper (diced)(optional)</li>
+            <li>1 Small green Bell Pepper (diced)(optional)</li>
+            <li>1/2 Small onion (diced)</li>
+            <li>2 cups boiled Yellow beans</li>
+        </ul>
+
+        <h2>Instructions</h2>
+        <ol>
+            <li>First, clean the rice by rinsing or washing the rice under cold water to remove excess starch.</li>
+            <li>Add the rice to a bowl & rinse under cold water until the water is clear.</li>
+            <li>Add the rice to a bowl & rinse under cold water until the water is clear.</li>
+            <li>On medium high heat in a pot add the cooking oil.</li>
+            <li>Once the oil becomes hot add the onion and bell peppers, and sauté for 3 to 5 minutes.</li>
+            <li>Add fresh minced garlic and sauté for 1 to 2 minutes or until it becomes fragrant.</li>
+            <li>Add the dry seasoning mixture to the veggies and stir everything together.</li>
+            <li>Add the tomato paste, stir and allow it to dissolve.</li>
+            <li>Next, add the boiled yellow beans and stir.</li>
+            <li>Add the 2 cups of water and the 1 cup of washed and rinsed rice to the pot.</li>
+            <li>Allow the liquid to come to a boil.</li>
+            <li>Allow the water to cook down for a little bit, then lower the temperature to low heat.</li>
+            <li>Cover the pot with a lid. (You can do the aluminum foil method and allow the rice to steam).</li>
+            <li>Let the rice steam or cook for 20-25 minutes.</li>
+            <li>Once the rice is done, use a fork to fluff the rice.</li>
+            <li>Serve while hot. Enjoy!</li>
+        </ol>
+    </div>
+</div>
+
+<script>
+function shareRecipe() {
+    if (navigator.share) {
+        navigator.share({
+            title: document.title,
+            url: window.location.href
+        });
+    } else {
+        navigator.clipboard.writeText(window.location.href);
+        alert("Link copied to clipboard!");
+    }
+}
+</script>
+
+</body>
+</html>

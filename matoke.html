@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>East African Matoke</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="overlay">
+    <a href="../index.html" class="back-link">← Back to Recipes</a>
+
+    <div class="recipe-page">
+        <h1>East African Style Matoke</h1>
+
+        <div class="recipe-meta">
+          <span>⏱ 40 mins</span>
+          <span>🍽 Serves 2</span>
+          <span>💰 Ksh 100 - 150 Budget Friendly</span>
+       </div>
+
+        <img src="Images/matoke.jpg" alt="East African style Matoke" loading="lazy">
+
+        <div class="recipe-actions">
+            <button onclick="window.print()">🖨 Print Recipe</button>
+            <button onclick="shareRecipe()">🔗 Share</button>
+        </div>
+
+        <h2>Ingredients</h2>
+        <ul>
+            <li>Matoke Bananas 7 pieces (unripe green bananas)</li>
+            <li>Potatoes 1kg peeled and cubed</li>
+            <li>Onion: 1 large (finely diced) </li>
+            <li>Tomatoes: 3 (diced)</li>
+            <li>Garlic: 2 cloves (minced, optional)</li>
+            <li>Ginger: 1 teaspoon (grated, optional) </li>
+            <li>Green Chili: 1 (chopped, adjust to taste, optional)</li>
+            <li>Coriander for garnish</li>
+            <li>Salt: 1 pinch (to taste)</li>
+            <li>Vegetable Oil: 3 tablespoons</li>
+            <li>Royco Cube: 1 (optional, for added flavor)</li>
+        </ul>
+
+        <h2>Instructions</h2>
+        <ol>
+            <li>Peel the matoke bananas by cutting off the ends and making a slit along the length of each banana. Remove the peel and slice the bananas into halves or thirds.</li>
+            <li>Heat oil in a large pot over medium heat. Add the diced onions and sauté until they become translucent.</li>
+            <li>Add the minced garlic, grated ginger, and chopped green chili (if using). Sauté for another minute until fragrant.</li>
+            <li>Add the diced tomatoes to the pot. Cook until they soften and break down, forming a sauce-like consistency.</li>
+            <li>Add the peeled and cubed potatoes to the pot. Stir well to coat them with the tomato mixture.</li>
+            <li>Add the sliced matoke bananas to the pot. Gently stir to combine all the ingredients.</li>
+            <li>Add enough water to cover the matoke and potatoes. Season with salt and add a Royco cube if desired. Bring to a boil.</li>
+            <li>Reduce the heat to low, cover the pot, and let it simmer for about 25-30 minutes or until the matoke and potatoes are tender. Stir occasionally to prevent sticking.</li>
+            <li>Once cooked, check the seasoning and adjust if necessary. Garnish with fresh coriander before serving.</li>
+            <li>Serve hot as a main dish or as a side with your favorite protein.</li>
+        </ol>
+    </div>
+</div>
+
+<script>
+function shareRecipe() {
+    if (navigator.share) {
+        navigator.share({
+            title: document.title,
+            url: window.location.href
+        });
+    } else {
+        navigator.clipboard.writeText(window.location.href);
+        alert("Link copied to clipboard!");
+    }
+}
+</script>
+
+</body>
+</html>
